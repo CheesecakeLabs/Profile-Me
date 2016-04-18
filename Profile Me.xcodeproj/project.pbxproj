@@ -21,7 +21,7 @@
 		F43366A42CD42BA21CEFE7EE /* Profile Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profile Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433693E54573E2C45E95BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Profile Me/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4336973453DF3313514230B /* PMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMHomeViewController.m; sourceTree = "<group>"; };
-		F4336976C34ECBBFDDED110A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		F4336976C34ECBBFDDED110A /* Profile-Me-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Profile-Me-Info.plist"; sourceTree = "<group>"; };
 		F4336A16B3E5230BF2481F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Profile Me/Base.lproj/PMHomeView.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4336A2902FEF0933D00E2EE /* PMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMHomeViewController.h; sourceTree = "<group>"; };
 		F4336CF75557158FD01077D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F433620CBA460DDB03884556 /* main.m */,
-				F4336976C34ECBBFDDED110A /* Info.plist */,
+				F4336976C34ECBBFDDED110A /* Profile-Me-Info.plist */,
 				F43365C963FF2C8D8CA611EB /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -140,7 +140,7 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Marcelo Salloum on Gigster";
 			};
-			buildConfigurationList = F43367E3FABA82F990959B92 /* Build configuration list for PBXProject "Info." */;
+			buildConfigurationList = F43367E3FABA82F990959B92 /* Build configuration list for PBXProject "Profile Me" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -290,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Profile Me/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Profile Me/Supporting Files/Profile-Me-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelosalloum.Profile-Me";
@@ -302,7 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Profile Me/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Profile Me/Supporting Files/Profile-Me-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelosalloum.Profile-Me";
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F43367E3FABA82F990959B92 /* Build configuration list for PBXProject "Info." */ = {
+		F43367E3FABA82F990959B92 /* Build configuration list for PBXProject "Profile Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F43369A5ED6465F584C4D1E2 /* Debug */,
