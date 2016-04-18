@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FDEC2791CC544D500D566FB /* PMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4336973453DF3313514230B /* PMHomeViewController.m */; };
 		F433601B29E27CC20C71D1A4 /* PMHomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43366F1B31980299585C502 /* PMHomeView.storyboard */; };
 		F43367280366012E5E5C3EBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F433620CBA460DDB03884556 /* main.m */; };
 		F43367CB2F59BD97F13D7E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4336CF75557158FD01077D9 /* Assets.xcassets */; };
@@ -176,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4336BBA2CC4C2CC36BA5248 /* MSAppDelegate.m in Sources */,
+				1FDEC2791CC544D500D566FB /* PMHomeViewController.m in Sources */,
 				F43367280366012E5E5C3EBE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
