@@ -11,6 +11,7 @@
 
 
 static NSInteger const kNumberOfProfiles = 5;
+static NSString *const kPMHomeCellIdentifier = @"pmHomeCellIdentifier";
 
 @interface PMHomeViewController ()
 
@@ -41,6 +42,7 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 
 	// Sets up TableView
 	self.tableView.backgroundColor = [UIColor colorWithWhite:239.f / 255.f alpha:1];
+	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kPMHomeCellIdentifier];
 }
 
 
@@ -67,7 +69,7 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [self setupPHHomeCell];
+	UITableViewCell *cell = [self setupPHHomeCell:indexPath];
 	switch (indexPath.section) {
 		case PMProfileTypeGithub:
 			cell.textLabel.text = NSLocalizedString(@"GitHub", nil);
@@ -92,9 +94,13 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 }
 
 
-- (UITableViewCell *)setupPHHomeCell
+- (UITableViewCell *)setupPHHomeCell:(NSIndexPath *)indexPath
 {
-	return [[UITableViewCell alloc] init];
+	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kPMHomeCellIdentifier forIndexPath:indexPath];
+	if (!cell) {
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kPMHomeCellIdentifier];
+	}
+	return cell;
 }
 
 
