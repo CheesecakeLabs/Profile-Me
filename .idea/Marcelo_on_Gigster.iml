@@ -4,10 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Modules/Home/PMHomeViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Modules/Home/PMHomeViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Profile Me/MSAppDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Profile Me/PMAppDelegate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Supporting Files/Profile-Me-Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Supporting Files/main.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Profile Me/MSAppDelegate.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Profile Me/PMAppDelegate.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Base.lproj/PMHomeView.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Profile Me/Assets/Assets.xcassets" isTestSource="false" />

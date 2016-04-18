@@ -1,5 +1,5 @@
 //
-//  MSAppDelegate.m
+//  PMAppDelegate.m
 //  Marcelo on Gigster
 //
 //  Created by Marcelo Salloum dos Santos on 4/18/16.
@@ -7,15 +7,15 @@
 //
 
 
-#import "MSAppDelegate.h"
+#import "PMAppDelegate.h"
 #import "PMHomeViewController.h"
 
 
-@interface MSAppDelegate ()
+@interface PMAppDelegate ()
 
 @end
 
-@implementation MSAppDelegate
+@implementation PMAppDelegate
 
 
 #pragma mark - Lifecycle

@@ -69,7 +69,7 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [self setupPHHomeCell:indexPath];
+	UITableViewCell *cell = [self setupPMHomeCell:indexPath];
 	switch (indexPath.section) {
 		case PMProfileTypeGithub:
 			cell.textLabel.text = NSLocalizedString(@"GitHub", nil);
@@ -94,7 +94,7 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 }
 
 
-- (UITableViewCell *)setupPHHomeCell:(NSIndexPath *)indexPath
+- (UITableViewCell *)setupPMHomeCell:(NSIndexPath *)indexPath
 {
 	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kPMHomeCellIdentifier forIndexPath:indexPath];
 	if (!cell) {
