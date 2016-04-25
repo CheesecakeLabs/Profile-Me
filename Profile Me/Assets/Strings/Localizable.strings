@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Profile Me
+
+  Created by Marcelo Salloum dos Santos on 4/25/16.
+  Copyright © 2016 Marcelo Salloum on Gigster. All rights reserved.
+*/
+
+"Profiles" = "Profiles";
+"GitHub" = "GitHub";
+"LinkedIn" = "LinkedIn";
+"Stack Overflow" = "Stack Overflow";
+"Facebook" = "Facebook";

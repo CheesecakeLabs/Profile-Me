@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA038291CCECDA100B812E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FA038281CCECDA100B812E4 /* Localizable.strings */; };
 		1FDEC2791CC544D500D566FB /* PMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4336973453DF3313514230B /* PMHomeViewController.m */; };
 		F43367280366012E5E5C3EBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F433620CBA460DDB03884556 /* main.m */; };
 		F43367CB2F59BD97F13D7E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4336CF75557158FD01077D9 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA038281CCECDA100B812E4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F433607B1682CBE560AF1F04 /* PMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMAppDelegate.h; sourceTree = "<group>"; };
 		F433620CBA460DDB03884556 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F43363CE1B5B96DFEB6AB244 /* PMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMAppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F4336CA52B66E760155FDF71 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				1FA038281CCECDA100B812E4 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		F4336E67DBC6545CB360CD67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F4336CF75557158FD01077D9 /* Assets.xcassets */,
+				F4336CA52B66E760155FDF71 /* Strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -153,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43367CB2F59BD97F13D7E8F /* Assets.xcassets in Resources */,
+				1FA038291CCECDA100B812E4 /* Localizable.strings in Resources */,
 				F4336849F32F4F173520BDC8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
