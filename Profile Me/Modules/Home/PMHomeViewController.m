@@ -10,7 +10,7 @@
 #import "PMHomeViewController.h"
 
 
-static NSInteger const kNumberOfProfiles = 5;
+static NSInteger const kNumberOfProfiles = 4;
 static NSString *const kPMHomeCellIdentifier = @"pmHomeCellIdentifier";
 
 @interface PMHomeViewController ()
@@ -20,7 +20,6 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 	PMProfileTypeGithub,
 	PMProfileTypeLinkedin,
 	PMProfileTypeStackoverflow,
-	PMProfileTypeTwitter,
 	PMProfileTypeFacebook
 };
 
@@ -80,9 +79,6 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 		case PMProfileTypeStackoverflow:
 			cell.textLabel.text = NSLocalizedString(@"Stack Overflow", nil);
 			break;
-		case PMProfileTypeTwitter:
-			cell.textLabel.text = NSLocalizedString(@"Twitter", nil);
-			break;
 		case PMProfileTypeFacebook:
 			cell.textLabel.text = NSLocalizedString(@"Facebook", nil);
 			break;
@@ -109,6 +105,22 @@ typedef NS_ENUM(NSUInteger, PMProfileType) {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	if (indexPath.section == PMProfileTypeGithub) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/marcelosalloum"]];
+	} else if (indexPath.section == PMProfileTypeLinkedin) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.linkedin.com/in/marcelosalloum/"]];
+	} else if (indexPath.section == PMProfileTypeStackoverflow) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://stackoverflow.com/users/875657/marcelosalloum"]];
+	} else if (indexPath.section == PMProfileTypeFacebook) {
+		NSString *fecebookId = @"100001077656862";
+		NSURL *facebookURL = [NSURL URLWithString:[NSString stringWithFormat:@"fb://profile/%@", fecebookId]];
+		if ([[UIApplication sharedApplication] canOpenURL:facebookURL]) {
+			[[UIApplication sharedApplication] openURL:facebookURL];
+		} else {
+			facebookURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://facebook.com/%@/", fecebookId]];
+			[[UIApplication sharedApplication] openURL:facebookURL];
+		}
+	}
 	[self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
