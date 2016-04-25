@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1FDEC2791CC544D500D566FB /* PMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4336973453DF3313514230B /* PMHomeViewController.m */; };
-		F433601B29E27CC20C71D1A4 /* PMHomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43366F1B31980299585C502 /* PMHomeView.storyboard */; };
 		F43367280366012E5E5C3EBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F433620CBA460DDB03884556 /* main.m */; };
 		F43367CB2F59BD97F13D7E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4336CF75557158FD01077D9 /* Assets.xcassets */; };
 		F4336849F32F4F173520BDC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43365C963FF2C8D8CA611EB /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 		F433693E54573E2C45E95BAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Profile Me/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4336973453DF3313514230B /* PMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMHomeViewController.m; sourceTree = "<group>"; };
 		F4336976C34ECBBFDDED110A /* Profile-Me-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Profile-Me-Info.plist"; sourceTree = "<group>"; };
-		F4336A16B3E5230BF2481F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Profile Me/Base.lproj/PMHomeView.storyboard"; sourceTree = SOURCE_ROOT; };
 		F4336A2902FEF0933D00E2EE /* PMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMHomeViewController.h; sourceTree = "<group>"; };
 		F4336CF75557158FD01077D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,14 +65,6 @@
 			path = "Profile Me";
 			sourceTree = "<group>";
 		};
-		F43366FA15C9AD1C5BB8DC0C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F43366F1B31980299585C502 /* PMHomeView.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F4336A6489BBE2175C22C175 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,7 +76,6 @@
 		F4336C78877E2EE8566D5765 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F43366FA15C9AD1C5BB8DC0C /* View */,
 				F4336A2902FEF0933D00E2EE /* PMHomeViewController.h */,
 				F4336973453DF3313514230B /* PMHomeViewController.m */,
 			);
@@ -165,7 +154,6 @@
 			files = (
 				F43367CB2F59BD97F13D7E8F /* Assets.xcassets in Resources */,
 				F4336849F32F4F173520BDC8 /* LaunchScreen.storyboard in Resources */,
-				F433601B29E27CC20C71D1A4 /* PMHomeView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,14 +179,6 @@
 				F433693E54573E2C45E95BAE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F43366F1B31980299585C502 /* PMHomeView.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4336A16B3E5230BF2481F39 /* Base */,
-			);
-			name = PMHomeView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
