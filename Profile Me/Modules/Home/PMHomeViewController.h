@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PMHomeViewController : UIViewController
+@interface PMHomeViewController : UITableViewController
 
 
 @end

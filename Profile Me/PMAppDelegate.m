@@ -1,5 +1,5 @@
 //
-//  MSAppDelegate.m
+//  PMAppDelegate.m
 //  Marcelo on Gigster
 //
 //  Created by Marcelo Salloum dos Santos on 4/18/16.
@@ -7,20 +7,25 @@
 //
 
 
-#import "MSAppDelegate.h"
+#import "PMAppDelegate.h"
+#import "PMHomeViewController.h"
 
 
-@interface MSAppDelegate ()
+@interface PMAppDelegate ()
 
 @end
 
-@implementation MSAppDelegate
+@implementation PMAppDelegate
 
 
+#pragma mark - Lifecycle
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+	[self setupRootViewController];
+
     return YES;
 }
 
@@ -46,6 +51,36 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark - Root View Controller
+
+
+- (void)setupRootViewController
+{
+	// Resets the rootViewController if needed:
+	if (self.window.rootViewController != nil) {
+		[self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
+		self.window.rootViewController = nil;
+	}
+
+	// Sets the initial controller as the root and make it visible.
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	[self.window setBackgroundColor:[UIColor whiteColor]];
+	[self setStatusBarColor:[UIColor blueColor]];
+
+	// Allocs and inits homeViewController and set it as rootViewController
+	PMHomeViewController *homeViewController = [[PMHomeViewController alloc] initWithStyle:UITableViewStyleGrouped];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+	self.window.rootViewController = navigationController;
+	[self.window makeKeyAndVisible];
+}
+
+
+- (void)setStatusBarColor:(UIColor *)color
+{
+	[self.window setBackgroundColor:color];
 }
 
 
